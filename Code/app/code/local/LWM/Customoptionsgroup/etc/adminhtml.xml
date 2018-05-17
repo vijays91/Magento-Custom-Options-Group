@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+        <customoptionsgroup module="customoptionsgroup">
+            <title>Custom Options Group</title>
+            <sort_order>71</sort_order>
+            <children>
+                <dynamic_fields module="customoptionsgroup">
+                    <title>Manage Reports</title>
+                    <sort_order>20</sort_order>
+                    <action>customoptionsgroup/adminhtml_customoptionsgroup/</action>
+                </dynamic_fields>
+            </children>
+        </customoptionsgroup>
+    </menu>
+	
+    <acl>
+        <resources>
+			<all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+			    <children>
+					<customoptionsgroup>
+						<title>Custom Options Group</title>
+						<children>
+							<dynamic_fields>
+								<title>Manage Reports</title>
+							</dynamic_fields>
+						</children>
+					</customoptionsgroup>
+                    <!-- system>
+                        <children>
+                            <config>
+                                <children>
+                                    <customoptionsgroup_tab>
+                                        <title>Custom Options Group Setting</title>
+                                    </customoptionsgroup_tab>
+                                </children>
+                            </config>
+                        </children>
+                    </system -->
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

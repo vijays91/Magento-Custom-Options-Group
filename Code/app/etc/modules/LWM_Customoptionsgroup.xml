@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LWM_Customoptionsgroup>
+            <active>true</active>
+			<codePool>local</codePool>
+			<depends>
+                <Mage_Core/>
+                <Mage_Eav/>
+                <Mage_Catalog/>
+            </depends>
+        </LWM_Customoptionsgroup>
+    </modules>
+</config>
