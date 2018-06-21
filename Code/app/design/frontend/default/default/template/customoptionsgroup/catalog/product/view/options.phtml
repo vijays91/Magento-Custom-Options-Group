@@ -190,7 +190,8 @@
             $fieldset = "txt";
             $count = 1;
             foreach($_options as $_option):
-                if($_option->getGroupOptions() != $fieldset) {
+                // if($_option->getGroupOptions() != $fieldset) {
+                if($_option->getGroupOptions() != $fieldset && $_option->getGroupOptions() != "") {
                     if($count != 1 ) {
                         echo "</fieldset>";
                     }
