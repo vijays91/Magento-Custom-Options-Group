@@ -36,7 +36,7 @@ class LWM_Customoptionsgroup_Model_Product_Option extends Mage_Catalog_Model_Pro
             $collection = Mage::getModel('customoptionsgroup/customoptionsgroup')->load($id);
             return $collection;
         } else {
-            return $this->__("Default");
+            return "Default";
         }
     }
 }
